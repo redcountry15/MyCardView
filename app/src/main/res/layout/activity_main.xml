@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgheaderminimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/gambarku"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="30dp"
+            android:src="@drawable/userpic" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-8dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@+id/gambarku"
+            android:layout_toRightOf="@id/gambarku"
+            android:fontFamily="@"
+            android:text="Mochamad Naufal Abdi Andika"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_marginLeft="-8dp"
+            android:layout_toEndOf="@id/gambarku"
+            android:layout_toRightOf="@id/gambarku"
+            android:text="Wallet USD"
+            android:textColor="#fff" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambarku"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-24dp"
+            android:layout_marginRight="30dp">
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/texss"
+                    android:src="@drawable/iclist" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/texss"
+                    android:layout_toRightOf="@id/img1"
+                    android:src="@drawable/icnet" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/texss"
+                    android:layout_toRightOf="@id/img2"
+                    android:src="@drawable/icplug" />
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="67dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/texss"
+                    android:layout_toRightOf="@id/img3"
+                    android:src="@drawable/icapps" />
+
+                <TextView
+                    android:id="@+id/teks4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img3"
+                    android:layout_marginLeft="290dp"
+                    android:fontFamily="serif"
+                    android:text="Apps"
+                    android:textColor="#80111111"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="serif"
+                    android:text="Main Menu"
+                    android:textColor="#80111111" />
+
+                <TextView
+                    android:id="@+id/teks1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img1"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="serif"
+                    android:text="Review"
+                    android:textColor="#80111111"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/teks2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img2"
+                    android:layout_marginLeft="105dp"
+                    android:fontFamily="serif"
+                    android:text="Network"
+                    android:textColor="#80111111"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/teks3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img3"
+                    android:layout_marginLeft="200dp"
+                    android:fontFamily="serif"
+                    android:text="Plugins"
+                    android:textColor="#80111111"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:src="@drawable/icguide" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need A Guide?"
+            android:textColor="#111"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#86111111"
+            android:text="We will give directions"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#86111111"
+            android:text="to the new user"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/btnyuk"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_marginTop="12dp"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bgbtnguide"
+            android:text="Guide Me" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
